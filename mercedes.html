@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Models</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Car Showcase</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+            <li><a href="tesla.html">Tesla</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="mercedes.html">Mercedes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Models Section -->
+    <section class="models">
+        <h2>Mercedes Models</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by model name...">
+        </div>
+        <div class="model-grid">
+            <div class="model-card" data-model="cclass">
+                <img src="images/mercedes-cclass.jpg" alt="Mercedes C-Class">
+                <h3>Mercedes C-Class</h3>
+                <p>Premium compact sedan with elegant design.</p>
+                <p><strong>Price:</strong> $45,000</p>
+                <button onclick="openModal('cclass')">View Details</button>
+            </div>
+            <div class="model-card" data-model="gle">
+                <img src="images/mercedes-gle.jpg" alt="Mercedes GLE">
+                <h3>Mercedes GLE</h3>
+                <p>Luxury midsize SUV with advanced safety features.</p>
+                <p><strong>Price:</strong> $62,000</p>
+                <button onclick="openModal('gle')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-data"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact us: info@carshowcase.com | &copy; 2025 Car Showcase</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

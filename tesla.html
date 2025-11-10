@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Models</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Car Showcase</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+            <li><a href="tesla.html">Tesla</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+        </ul>
+    </nav>
+
+    <!-- Models Section -->
+    <section class="models">
+        <h2>Tesla Models</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by model name...">
+        </div>
+        <div class="model-grid">
+            <div class="model-card" data-model="models">
+                <img src="images/tesla-model-s.jpg" alt="Tesla Model S">
+                <h3>Tesla Model S</h3>
+                <p>Electric sedan with unmatched acceleration.</p>
+                <p><strong>Price:</strong> $89,990</p>
+                <button onclick="openModal('models')">View Details</button>
+            </div>
+            <div class="model-card" data-model="modely">
+                <img src="images/tesla-model-y.jpg" alt="Tesla Model Y">
+                <h3>Tesla Model Y</h3>
+                <p>Versatile electric SUV with advanced features.</p>
+                <p><strong>Price:</strong> $65,990</p>
+                <button onclick="openModal('modely')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-data"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact us: info@carshowcase.com | &copy; 2025 Car Showcase</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

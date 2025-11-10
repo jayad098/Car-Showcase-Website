@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi Models</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Car Showcase</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+            <li><a href="tesla.html">Tesla</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="mercedes.html">Mercedes</a></li>
+            <li><a href="defender.html">Defender</a></li>
+            <li><a href="audi.html">Audi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Models Section -->
+    <section class="models">
+        <h2>Audi Models</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by model name...">
+        </div>
+        <div class="model-grid">
+            <div class="model-card" data-model="a4">
+                <img src="images/audi-a4.jpg" alt="Audi A4">
+                <h3>Audi A4</h3>
+                <p>Premium compact sedan with sleek design and technology.</p>
+                <p><strong>Price:</strong> $42,000</p>
+                <button onclick="openModal('a4')">View Details</button>
+            </div>
+            <div class="model-card" data-model="q5">
+                <img src="images/audi-q5.jpg" alt="Audi Q5">
+                <h3>Audi Q5</h3>
+                <p>Versatile luxury SUV with advanced features.</p>
+                <p><strong>Price:</strong> $53,000</p>
+                <button onclick="openModal('q5')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-data"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact us: info@carshowcase.com | &copy; 2025 Car Showcase</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

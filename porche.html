@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Models</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Car Showcase</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+            <li><a href="tesla.html">Tesla</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="mercedes.html">Mercedes</a></li>
+            <li><a href="defender.html">Defender</a></li>
+            <li><a href="audi.html">Audi</a></li>
+            <li><a href="porsche.html">Porsche</a></li>
+        </ul>
+    </nav>
+
+    <!-- Models Section -->
+    <section class="models">
+        <h2>Porsche Models</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by model name...">
+        </div>
+        <div class="model-grid">
+            <div class="model-card" data-model="911">
+                <img src="images/porsche-911.jpg" alt="Porsche 911">
+                <h3>Porsche 911</h3>
+                <p>Iconic sports car with timeless performance.</p>
+                <p><strong>Price:</strong> $101,200</p>
+                <button onclick="openModal('911')">View Details</button>
+            </div>
+            <div class="model-card" data-model="cayenne">
+                <img src="images/porsche-cayenne.jpg" alt="Porsche Cayenne">
+                <h3>Porsche Cayenne</h3>
+                <p>Luxury SUV with dynamic driving experience.</p>
+                <p><strong>Price:</strong> $79,200</p>
+                <button onclick="openModal('cayenne')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-data"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact us: info@carshowcase.com | &copy; 2025 Car Showcase</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
